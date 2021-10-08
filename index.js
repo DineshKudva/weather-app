@@ -25,6 +25,8 @@ app.get('/get-weather',(req,res)=>{
 	});  
 });
 
+
+
 app.use((req,res)=>{
     res.status(404).render('error');
 });
