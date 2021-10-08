@@ -12,8 +12,7 @@ function sendCity(e){
     const city = inp.value;
     const weather =`/get-weather/?city=${city}`;    
     fetch(weather)
-    .then(res=>res.json()
-    )
+    .then(res=>res.json())
     .then((data)=>{
         temp.textContent= data.temp;
         cond.textContent= data.description;
