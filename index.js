@@ -31,4 +31,4 @@ app.use((req,res)=>{
     res.status(404).render('error');
 });
 
-app.listen(port)
+app.listen(port);
